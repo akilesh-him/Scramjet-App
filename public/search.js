@@ -1,11 +1,10 @@
 "use strict";
 /**
- *
  * @param {string} input
- * @param {string} template Template for a search query.
+ * @param {string} [template="https://www.startpage.com/sp/search?query=%s"] Template for a search query.
  * @returns {string} Fully qualified URL
  */
-function search(input, template) {
+function search(input, template = "https://www.startpage.com/sp/search?query=%s") {
 	try {
 		// input is a valid URL:
 		// eg: https://example.com, https://example.com/test?q=param
